@@ -1,3 +1,4 @@
+# メイン処理モジュール
 from pathlib import Path
 import os.path
 import datetime

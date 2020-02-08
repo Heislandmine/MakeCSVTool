@@ -1,3 +1,4 @@
+# 実行モジュール
 import MakeCSV
 import sys
 import os.path
@@ -13,6 +14,7 @@ if os.path.exists(input_path):
     if os.path.exists(output_path):
         if os.path.isdir(input_path):
             if os.path.isdir(output_path):
+                # メイン処理の実行
                 csv_maker = MakeCSV.MakeCSV(input_path, output_path)
                 result = csv_maker.make_csv()
                 print("抽出数:{}".format(result))
